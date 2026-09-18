@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tayyiaba Khan</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1ECF4;--ink:#241B33;--muted:#5C5169;--accent:#6B4FA0;--warm:#D9A05B;--line:#D4C9DE}
+@media(prefers-color-scheme:dark){:root{--bg:#15101D;--ink:#EFE9F5;--muted:#A99DB8;--accent:#B79BE8;--warm:#E5B676;--line:#2E2440}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Karla,Arial,sans-serif;font-size:17px;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2.5rem,9vw,4.2rem);line-height:1.02;margin:0 0 14px;letter-spacing:-.02em}
+h2{font-family:Fraunces,Georgia,serif;font-size:1.6rem;margin:0 0 14px}
+p{max-width:66ch}
+header{padding:70px 0 50px;display:flex;gap:36px;align-items:flex-end;flex-wrap:wrap}
+.txt{flex:1 1 320px}
+.tag{color:var(--muted);max-width:34ch;margin:0}
+.portrait{flex:0 0 190px;height:230px;border-radius:115px 115px 8px 8px;background:linear-gradient(160deg,var(--warm),var(--accent))}
+.portrait img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:999px;text-decoration:none;background:var(--accent);color:#fff;font-weight:600}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.tile{aspect-ratio:1/1;border-radius:10px;background:linear-gradient(140deg,var(--accent),var(--warm));opacity:.5}
+.tile img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.row{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row h3{margin:0 0 4px;font-size:1.05rem}
+.row p{margin:0;color:var(--muted);font-size:.95rem}
+.price{white-space:nowrap;color:var(--warm);font-weight:600}
+.links{display:flex;gap:12px;flex-wrap:wrap;padding:0;list-style:none}
+.links a{padding:9px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink)}
+footer{padding:34px 0 54px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+a:focus-visible{outline:2px solid var(--warm);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="txt">
+    <h1>Tayyiaba Khan</h1>
+    <p class="tag">EDIT THIS: one sentence on what you do.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="https://www.instagram.com/tayyiabakhan" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="portrait"></div>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>EDIT THIS: two or three sentences — who you are, where you're based, what you make or offer, and who it's for.</p>
+</section>
+
+<section>
+  <h2>Work</h2>
+  <div class="grid">
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div>
+  </div>
+</section>
+
+<section>
+  <h2>What I offer</h2>
+  <div class="row"><div><h3>First service</h3><p>What's included, how long it takes.</p></div><div class="price">From PKR 0</div></div>
+  <div class="row"><div><h3>Second service</h3><p>What's included, how long it takes.</p></div><div class="price">From PKR 0</div></div>
+  <div class="row"><div><h3>Third service</h3><p>What's included, how long it takes.</p></div><div class="price">From PKR 0</div></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Best way to reach me is a DM, or email below.</p>
+  <ul class="links">
+    <li><a href="https://www.instagram.com/tayyiabakhan" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="mailto:you@example.com">Email</a></li>
+    <li><a href="https://wa.me/92XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+  </ul>
+</section>
+
+<footer>© 2026 Tayyiaba Khan</footer>
+</div>
+</body>
+</html>
